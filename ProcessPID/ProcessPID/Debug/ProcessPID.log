@@ -1,0 +1,3 @@
+﻿  pid.cpp
+C:\Users\puiuv\source\repos\ProcessPID\ProcessPID\pid.cpp(116,8): warning C4101: 'nameProc': unreferenced local variable
+  ProcessPID.vcxproj -> C:\Users\puiuv\source\repos\ProcessPID\Debug\ProcessPID.exe
