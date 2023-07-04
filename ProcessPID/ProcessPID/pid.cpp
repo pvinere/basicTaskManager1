@@ -12,8 +12,8 @@ LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 BOOL CALLBACK DlgProc(HWND hDlg, UINT iMsg,
 	WPARAM wParam, LPARAM lParam);
 
-BOOL dlgActive = FALSE; //variabila pentru caseta de dialog
-HWND hwndMain; //variabila handle a ferestrei principale
+BOOL dlgActive = FALSE;
+HWND hwndMain;
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	PSTR szCmdLine, int iCmdShow)
@@ -24,16 +24,15 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	WNDCLASSEX  wndclass;
 
 	wndclass.cbSize = sizeof(wndclass);
-	wndclass.style = CS_HREDRAW | CS_VREDRAW;  //optiuni pentru stilul clasei 
+	wndclass.style = CS_HREDRAW | CS_VREDRAW;
 	wndclass.lpfnWndProc = WndProc;
 	wndclass.cbClsExtra = 0;
 	wndclass.cbWndExtra = 0;
 	wndclass.hInstance = hInstance;
 	wndclass.hIcon = LoadIcon(NULL, IDI_APPLICATION);
-	// incarca pictograma fisierelor de tip aplicatie
-	wndclass.hCursor = LoadCursor(NULL, IDC_ARROW); // incarca cursorul sageata  
+	wndclass.hCursor = LoadCursor(NULL, IDC_ARROW); 
 	wndclass.hbrBackground = (HBRUSH)GetStockObject(WHITE_BRUSH);
-	// fondul ferstrei de culoare alba     
+
 	wndclass.lpszMenuName = NULL;
 	wndclass.lpszClassName = szAppName;
 	wndclass.hIconSm = LoadIcon(NULL, IDI_APPLICATION);

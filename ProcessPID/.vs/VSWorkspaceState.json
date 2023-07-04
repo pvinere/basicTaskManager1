@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Debug",
+    "\\ProcessPID",
+    "\\ProcessPID\\x64",
+    "\\ProcessPID\\x64\\Debug",
+    "\\ProcessPID\\x64\\Debug\\ProcessPID.tlog",
+    "\\x64"
+  ],
+  "SelectedNode": "\\ProcessPID\\pid.cpp",
+  "PreviewInSolutionExplorer": false
+}
